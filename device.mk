@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     doze \
-    devicesettings
+    devicesettin
 
 # Fingerprint
 PRODUCT_PACKAGES += \
