@@ -13,6 +13,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.vendor.display.sensortype=2 \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/OPPO_OLED_AD_calib.cfg
 
+# Boot
+PRODUCT_PRODUCT_PROPERTIES += \
+   sys.vendor.shutdown.waittime=500
+
 # Audio
 PRODUCT_PRODUCT_PROPERTIES += \
    ro.config.vc_call_vol_steps=7 \
@@ -75,3 +79,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # UI
 PRODUCT_PRODUCT_PROPERTIES += \
     sys.use_fifo_ui=1
+
+# Dalvik Heap
+PRODUCT_PRODUCT_PROPERTIES += \
+   dalvik.vm.heapstartsize=8m \
+   dalvik.vm.heapgrowthlimit=256m \
+   dalvik.vm.heapsize=512m \
+   dalvik.vm.heaptargetutilization=0.75 \ 
+   dalvik.vm.heapminfree=2m \
+   dalvik.vm.heapmaxfree=8m
