@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from realme r5x
 $(call inherit-product, device/realme/r5x/device.mk)
@@ -34,7 +34,7 @@ TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1600
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := du_r5x
+PRODUCT_NAME := aosp_r5x
 PRODUCT_DEVICE := r5x
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := realme

@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_r5x.mk
+    $(LOCAL_DIR)/aosp_r5x.mk
