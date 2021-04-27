@@ -49,7 +49,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
-    media.settings.xml=/vendor/etc/media_profiles_V1_0.xml
+    media.settings.xml=/vendor/etc/media_profiles_V1_0.xml \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
+    debug.stagefright.ccodec=0
+
 
 # Netflix
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -57,7 +60,21 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	
 # Memory optimizations
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.vendor.qti.sys.fw.bservice_enable=true
+    ro.vendor.qti.sys.fw.bservice_enable=true \
+    ro.sys.fw.bservice_enable=true \
+    ro.sys.fw.bservice_limit=5 \
+    ro.sys.fw.bservice_age=5000 \
+    ro.am.reschedule_service=true \ 
+    ro.config.fha_enable=true \
+    ro.sys.fw.bg_apps_limit=32 \
+    ro.config.dha_cached_max=16 \
+    ro.config.dha_empty_max=42 \
+    ro.config.dha_empty_init=32 \
+    ro.config.dha_lmk_scale=0.545 \ 
+    ro.config.dha_th_rate=2.3 \
+    ro.config.sdha_apps_bg_max=64 \ 
+    ro.config.sdha_apps_bg_min=8 \
+
 
 # Perf
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -82,9 +99,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Dalvik Heap
 PRODUCT_PRODUCT_PROPERTIES += \
-   dalvik.vm.heapstartsize=8m \
-   dalvik.vm.heapgrowthlimit=256m \
-   dalvik.vm.heapsize=512m \
-   dalvik.vm.heaptargetutilization=0.75 \ 
-   dalvik.vm.heapminfree=2m \
-   dalvik.vm.heapmaxfree=8m
+    dalvik.vm.heapstartsize=8m \
+    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.75 \ 
+    dalvik.vm.heapminfree=2m \
+    dalvik.vm.heapmaxfree=8m
