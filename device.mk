@@ -37,9 +37,9 @@ PRODUCT_PACKAGES += \
     libldacBT_dec \
     BluetoothResCommon
 
-# Camera
+# GCamGO
 PRODUCT_PACKAGES += \
-    Snap
+    GoogleCameraGo
 
 # Charger
 PRODUCT_COPY_FILES += \
@@ -61,7 +61,7 @@ PRODUCT_PACKAGES += \
 # Doze
 PRODUCT_PACKAGES += \
     doze \
-    devicesettin
+    devicesettings
 
 # Fingerprint
 PRODUCT_PACKAGES += \
